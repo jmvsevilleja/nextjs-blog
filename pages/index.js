@@ -8,13 +8,23 @@ import {getSortedPostsData} from '../lib/posts';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
-  console.log('allPostsData', allPostsData);
+  console.log('getStaticProps', allPostsData);
   return {
     props: {
       allPostsData,
     },
   };
 }
+
+// export async function getServerSideProps() {
+//   const allPostsData = getSortedPostsData();
+//   console.log('getServerSideProps', allPostsData);
+//   return {
+//     props: {
+//       allPostsData,
+//     },
+//   };
+// }
 
 export default function Home({allPostsData}) {
   console.log('Home allPostsData', allPostsData);

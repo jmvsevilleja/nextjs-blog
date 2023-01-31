@@ -7,25 +7,25 @@ import clsx from 'clsx';
 import {getSortedPostsData} from '../lib/posts';
 import Date from '../components/date';
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  console.log('getStaticProps', allPostsData);
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-// export async function getServerSideProps() {
+// export async function getStaticProps() {
 //   const allPostsData = getSortedPostsData();
-//   console.log('getServerSideProps', allPostsData);
+//   console.log('getStaticProps', allPostsData);
 //   return {
 //     props: {
 //       allPostsData,
 //     },
 //   };
 // }
+
+export async function getServerSideProps() {
+  const allPostsData = getSortedPostsData();
+  console.log('getServerSideProps', allPostsData);
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
 
 export default function Home({allPostsData}) {
   console.log('Home allPostsData', allPostsData);

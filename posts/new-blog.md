@@ -1,5 +1,5 @@
 ---
-title: "My New Blog Page XXX"
+title: "My New Blog Page"
 date: "2023-01-11"
 ---
 

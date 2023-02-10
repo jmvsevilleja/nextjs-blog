@@ -41,7 +41,7 @@ export default function Home({allPostsData}) {
             [styles.error]: false,
             'custom': true
           })}
-        ><p >[Hello, I’m Jess. I’m a software engineer]</p></div>
+        ><p >[Hello, I’m Jess. I’m a software engineer] JS</p></div>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
